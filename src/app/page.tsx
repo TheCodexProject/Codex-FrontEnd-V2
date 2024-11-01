@@ -1,4 +1,6 @@
 import Image from "next/image";
+import {Alert, AlertDescription, AlertTitle} from "@/components/ui/alert";
+import {Terminal} from "lucide-react";
 
 export default function Home() {
   return (
@@ -47,6 +49,16 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+        <div>
+          <Alert>
+            <Terminal className="h-4 w-4" />
+            <AlertTitle>Heads up!</AlertTitle>
+            <AlertDescription>
+              You can add components and dependencies to your app using the cli.
+            </AlertDescription>
+          </Alert>
+
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
